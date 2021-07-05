@@ -4,6 +4,8 @@ from prepare_data import insert_to_db, get_data, get_list_cities
 from distance import get_distance
 from config import app
 
+app = app
+
 
 @app.route('/api/v1/city/<name_place>', methods=['GET'])
 def get_city(name_place):

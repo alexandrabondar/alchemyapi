@@ -2,6 +2,7 @@ import requests
 from config import api_key_coords, api_key_weather, api_uri_weather, api_uri_coords
 from flask import abort
 
+
 def get_coords_yandex(place):
     print(f'Get info from yandex api about city {place}')
     req = 'https://geocode-maps.yandex.ru/' + api_uri_coords + api_key_coords + '&geocode=' + place
